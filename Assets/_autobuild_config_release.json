@@ -1,0 +1,53 @@
+{
+	"Common": {
+		"productName": "ClientTemplate",
+		"bundleID": "com.toh.game.clienttemplate",
+		"version": "0.0.1",
+		"compileFlags": ";REMOVE_LOG",
+		"orientation": "portrait",
+		"removeLog": "1"
+	},
+	"Standalone": {
+	},
+	"iOS": {
+		"outputName": "ClientTemplate_{version}",
+		"iosSignTeamID": "0000",
+		"version": "1.0.0",
+		"iosVersionCode": "1.0.0.1",
+        "compileFlags": ";OS_IOS",
+        "targetIosVersion": "8.0",
+        "bundleID": "com.toh.game.clienttemplate",
+        "plugins": {
+        	"from": "",
+        	"to":  ""
+        },
+		"delete": [
+			"../_build/ios"
+		]
+	},
+	"Android": {
+		"androidBuildMode": "gradle",
+		"outputName": "ClientTemplate_{version}_{androidVersionCode}.apk",
+		"androidVersionCode": "10000",
+		"keystorePath": "Plugins/Android/Keystore/BiPub.keystore",
+		"keystorePass": "123456",
+		"keystoreAliasName": "bipub",
+		"keystoreAliasPass": "123456",
+		"plugins": {
+        	"from": "",
+        	"to":  ""
+        },
+		"delete": [
+			"Plugins/Android/libs",
+			"Plugins/Android/libs.meta",
+			"Plugins/Android/res",
+			"Plugins/Android/res.meta",
+			"Plugins/Android/AndroidManifest.xml",
+			"Plugins/Android/AndroidManifest.xml.meta"
+		]
+	},
+	"Scenes": [
+		"Assets/Scenes/TGameLoad.unity",
+		"Assets/Scenes/MainMenu.unity"
+	]
+}
